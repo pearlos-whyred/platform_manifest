@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <project path="build/make" name="platform_build" remote="pearl">
+        <copyfile src="core/root.mk" dest="Makefile" />
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+  </project>
+  
+  <project path="bionic" name="platform_bionic" remote="pearl" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="pearl"/>
+  <project path="build/soong" name="platform_build_soong" remote="pearl">
+        <linkfile src="root.bp" dest="Android.bp" />
+        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+    
+  <project path="external/ant-wireless/antradio-library" name="platform_external_ant-wireless_antradio-library" remote="pearl" />
+  <project path="external/ant-wireless/ant_native" name="platform_external_ant-wireless_ant_native" remote="pearl" />
+  <project path="external/ant-wireless/ant_service" name="platform_external_ant-wireless_ant_service" remote="pearl" />
+  <project path="external/exfat" name="platform_external_exfat" remote="pearl" />
+  <project path="external/ntfs-3g" name="platform_external_ntfs-3g" remote="pearl" />
+  <project path="external/libphonenumber" name="platform_external_libphonenumber" remote="pearl" />
+  <project path="external/perfetto" name="platform_external_perfetto" remote="pearl" />
+  <project path="external/selinux" name="platform_external_selinux" remote="pearl" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" remote="pearl" />
+  <project path="external/json-c" name="platform_external_json-c" remote="pearl" />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="pearl" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="pearl" />
+  <project path="frameworks/compile/mclinker" name="platform_frameworks_compile_mclinker" remote="pearl" />
+  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="pearl" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="pearl" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="pearl" />
+  <project path="hardware/qcom/audio" name="platform_hardware_qcom_audio" remote="pearl" />
+  <project path="hardware/qcom/camera" name="platform_hardware_qcom_camera" remote="pearl" />
+  <project path="hardware/qcom/display" name="platform_hardware_qcom_display" remote="pearl" />
+  <project path="hardware/qcom/fm" name="platform_hardware_qcom_fm" remote="pearl" />
+  <project path="hardware/qcom/media" name="platform_hardware_qcom_media" remote="pearl" />
+  <project path="hardware/qcom/power" name="platform_hardware_qcom_power" remote="pearl" revision="pie" />
+  <project path="hardware/qcom/thermal" name="platform_hardware_qcom_thermal" remote="pearl" revision="pie" />
+  <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" remote="pearl" revision="pie" />
+  <project path="hardware/qcom/vr" name="platform_hardware_qcom_vr" remote="pearl" revision="pie" />
+  <project path="hardware/qcom/bt" name="platform_hardware_qcom_bt" remote="pearl" revision="pie" />
+  <project path="hardware/qcom/bt-caf" name="platform_hardware_qcom_bt-caf" remote="pearl" revision="pie" />
+  <project path="hardware/qcom/gps" name="platform_hardware_qcom_gps" remote="pearl" />
+  <project path="hardware/qcom/wlan-caf" name="platform_hardware_qcom_wlan-caf" remote="pearl" revision="pie" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="pearl" />
+  <project path="hardware/pearl/interfaces" name="platform_hardware_pearl_interfaces" groups="pdk" remote="pearl" />
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="pearl" />
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="pearl" />
+  <project path="hardware/nxp/nfc" name="platform_hardware_nxp_nfc" remote="pearl" />
+  <project path="hardware/ril" name="platform_hardware_ril" remote="pearl" revision="pie" />
+  <project path="hardware/ril-caf" name="platform_hardware_ril-caf" remote="pearl" revision="pie" />
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="pearl" />
+  <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" remote="pearl" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="pearl" />
+  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="pearl" />
+  <project path="packages/apps/FMRadio" name="platform_packages_apps_FMRadio" remote="pearl" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="pearl" />
+  <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="pearl" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="pearl" />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="pearl" />	
+  <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="pearl" />	
+  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="pearl" />
+  <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" remote="pearl" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="pearl" />
+  
+  </manifest>
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="pearl" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="pearl" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="pearl" />
+  <project path="prebuilts/build-tools" name="platform_prebuilts_build-tools" remote="pearl" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86" name="platform_prebuilts_clang_host_linux-x86" remote="pearl" clone-depth="1" />
+  <project path="system/bt" name="platform_system_bt" remote="pearl" />
+  <project path="system/core" name="platform_system_core" remote="pearl" />
+  <project path="system/extras" name="platform_system_extras" remote="pearl" />
+  <project path="system/qcom" name="platform_system_qcom" remote="pearl" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="pearl" />
+  <project path="system/vold" name="platform_system_vold" remote="pearl" />
+  <project path="system/tools/dtbtool" name="platform_system_tools_dtbtool" remote="pearl" />
+  <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="pearl" />
+  <project path="vendor/pearl" name="platform_vendor_pearl" remote="pearl" />
+  <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" remote="pearl" />
+  <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" remote="pearl" />
+  <project path="vendor/qcom/opensource/dpm" name="platform_vendor_qcom_opensource_dpm" remote="pearl" />
+  <project path="vendor/qcom/opensource/audio" name="platform_vendor_qcom_opensource_audio" remote="pearl" />
+  <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="pearl" />
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="pearl" />
+  <project path="device/qcom/sepolicy-legacy" name="platform_device_qcom_sepolicy-legacy" remote="pearl" />
+  <project path="device/pearl/sepolicy" name="platform_device_pearl_sepolicy" remote="pearl" />
