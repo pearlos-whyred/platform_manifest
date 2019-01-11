@@ -14,6 +14,12 @@
 		   
   <remote name="github"
 	      fetch="https://github.com/" />
+	
+  <!-- PearlOS remote -->
+  <remote name="pearl"
+          fetch="https://github.com/PearlOS"
+          revision="refs/heads/pie"
+          sync-j="16" />
 
   <remote name="lineage"
           fetch="https://github.com/LineageOS"
