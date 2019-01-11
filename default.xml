@@ -706,5 +706,5 @@
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
   <!-- Manifest for PearlOS -->
-  <include name="pearl.xml" />
+  <include name="snippets/pearl.xml" />
 </manifest>
