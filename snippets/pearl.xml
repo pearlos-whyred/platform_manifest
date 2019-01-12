@@ -67,8 +67,6 @@
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="pearl" />
   <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" remote="pearl" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="pearl" />
-  
-  </manifest>
   <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="pearl" />
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="pearl" />
   <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="pearl" />
@@ -91,3 +89,5 @@
   <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="pearl" />
   <project path="device/qcom/sepolicy-legacy" name="platform_device_qcom_sepolicy-legacy" remote="pearl" />
   <project path="device/pearl/sepolicy" name="platform_device_pearl_sepolicy" remote="pearl" />
+ 
+</manifest>
