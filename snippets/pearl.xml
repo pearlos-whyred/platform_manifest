@@ -10,6 +10,10 @@
         <linkfile src="target" dest="build/target" />
         <linkfile src="tools" dest="build/tools" />
   </project>
+
+  <remote name="lean"
+          fetch="https://github.com/LeanOS-Project"
+          revision="refs/heads/lean-9.x"/>
   
   <project path="bionic" name="platform_bionic" remote="pearl" />
   <project path="bootable/recovery" name="platform_bootable_recovery" remote="pearl"/>
@@ -28,7 +32,7 @@
   <project path="external/perfetto" name="platform_external_perfetto" remote="pearl" />
   <project path="external/selinux" name="platform_external_selinux" remote="pearl" />
   <project path="external/tinycompress" name="platform_external_tinycompress" remote="pearl" />
-  <project path="external/json-c" name="platform_external_json-c" remote="pearl" />
+  <project path="external/json-c" name="platform_external_json-c" remote="lean" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="pearl" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="pearl" />
   <project path="frameworks/compile/mclinker" name="platform_frameworks_compile_mclinker" remote="pearl" />
@@ -58,7 +62,7 @@
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="pearl" />
   <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" remote="pearl" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="pearl" />
-  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="pearl" />
+  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="lean" />
   <project path="packages/apps/FMRadio" name="platform_packages_apps_FMRadio" remote="pearl" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="pearl" />
   <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="pearl" />
@@ -68,12 +72,11 @@
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="pearl" />
   <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" remote="pearl" />
   <project path="packages/apps/OmniStyle" name="platform_packages_apps_OmniStyle" remote="pearl" />
-  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="pearl" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="pearl" />
   <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="pearl" />
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="pearl" />
   <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="pearl" />
-  <project path="prebuilts/build-tools" name="platform_prebuilts_build-tools" remote="pearl" clone-depth="1" />
+  <project path="prebuilts/build-tools" name="platform_prebuilts_build-tools" remote="lean" clone-depth="1" />
   <project path="prebuilts/clang/host/linux-x86" name="platform_prebuilts_clang_host_linux-x86" remote="pearl" clone-depth="1" />
   <project path="system/bt" name="platform_system_bt" remote="pearl" />
   <project path="system/core" name="platform_system_core" remote="pearl" />
@@ -89,7 +92,7 @@
   <project path="vendor/qcom/opensource/dpm" name="platform_vendor_qcom_opensource_dpm" remote="pearl" />
   <project path="vendor/qcom/opensource/audio" name="platform_vendor_qcom_opensource_audio" remote="pearl" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="pearl" />
-  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="pearl" />
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="lean" />
   <project path="device/qcom/sepolicy-legacy" name="platform_device_qcom_sepolicy-legacy" remote="pearl" />
   <project path="device/pearl/sepolicy" name="platform_device_pearl_sepolicy" remote="pearl" />
  
