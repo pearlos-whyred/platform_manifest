@@ -30,7 +30,7 @@ From root directory of Project, perform following commands in terminal
 ```bash
 $ . build/envsetup.sh
 $ lunch pearl_$device-userdebug
-$ mka bacon pearl or brunch device
+$ make zerotwo or brunch device
 ```
 ---------------------------------------------------------------------------------------
  Credits:
