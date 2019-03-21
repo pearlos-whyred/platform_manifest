@@ -37,6 +37,7 @@
   <project path="frameworks/base" name="platform_frameworks_base" remote="pearl" />
   <project path="frameworks/compile/mclinker" name="platform_frameworks_compile_mclinker" remote="pearl" />
   <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="pearl" />
+  <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" remote="pearl" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="pearl" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="pearl" />
   <project path="hardware/qcom/audio" name="platform_hardware_qcom_audio" remote="pearl" />
