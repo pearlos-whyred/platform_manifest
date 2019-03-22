@@ -714,4 +714,7 @@
 
   <!-- Manifest for PearlOS -->
   <include name="snippets/pearl.xml" />
+
+  <!-- Manifest for Hals -->
+  <include name="snippets/hardware.xml" />
 </manifest>

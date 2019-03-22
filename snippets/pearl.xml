@@ -40,12 +40,9 @@
   <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" remote="pearl" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="pearl" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="pearl" />
-  <project path="hardware/qcom/audio" name="platform_hardware_qcom_audio" remote="pearl" />
   <project path="hardware/qcom/bootctrl" name="platform_hardware_qcom_bootctrl" remote="pearl" />
   <project path="hardware/qcom/camera" name="platform_hardware_qcom_camera" remote="pearl" />
-  <project path="hardware/qcom/display" name="platform_hardware_qcom_display" remote="pearl" />
   <project path="hardware/qcom/fm" name="platform_hardware_qcom_fm" remote="pearl" />
-  <project path="hardware/qcom/media" name="platform_hardware_qcom_media" remote="pearl" />
   <project path="hardware/qcom/power" name="platform_hardware_qcom_power" remote="pearl" revision="pie" />
   <project path="hardware/qcom/thermal" name="platform_hardware_qcom_thermal" remote="pearl" revision="pie" />
   <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" remote="pearl" revision="pie" />
