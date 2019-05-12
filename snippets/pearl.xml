@@ -11,9 +11,9 @@
         <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <remote name="lean"
-          fetch="https://github.com/LeanOS-Project"
-          revision="refs/heads/lean-9.x"/>
+  <remote name="pearl"
+          fetch="https://github.com/PearlOS"
+          revision="refs/heads/pie"/>
   
   <project path="bionic" name="platform_bionic" remote="pearl" />
   <project path="bootable/recovery" name="platform_bootable_recovery" remote="pearl"/>
@@ -21,25 +21,20 @@
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-    
+
+  <!-- Pearl External Repos -->
   <project path="external/ant-wireless/antradio-library" name="platform_external_ant-wireless_antradio-library" remote="pearl" />
   <project path="external/ant-wireless/ant_native" name="platform_external_ant-wireless_ant_native" remote="pearl" />
   <project path="external/ant-wireless/ant_service" name="platform_external_ant-wireless_ant_service" remote="pearl" />
   <project path="external/exfat" name="platform_external_exfat" remote="pearl" />
-    <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
   <project path="external/ntfs-3g" name="platform_external_ntfs-3g" remote="pearl" />
   <project path="external/libphonenumber" name="platform_external_libphonenumber" remote="pearl" />
   <project path="external/perfetto" name="platform_external_perfetto" remote="pearl" />
   <project path="external/selinux" name="platform_external_selinux" remote="pearl" />
   <project path="external/tinycompress" name="platform_external_tinycompress" remote="pearl" />
   <project path="external/json-c" name="platform_external_json-c" remote="lean" />
-  <project path="frameworks/av" name="platform_frameworks_av" remote="pearl" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="pearl" />
-  <project path="frameworks/compile/mclinker" name="platform_frameworks_compile_mclinker" remote="pearl" />
-  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="pearl" />
-  <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" remote="pearl" />
-  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="pearl" />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="pearl" />
+
+  <!-- Pearl Hardware Repos -->
   <project path="hardware/qcom/bootctrl" name="platform_hardware_qcom_bootctrl" remote="pearl" />
   <project path="hardware/qcom/camera" name="platform_hardware_qcom_camera" remote="pearl" />
   <project path="hardware/qcom/fm" name="platform_hardware_qcom_fm" remote="pearl" />
@@ -58,6 +53,9 @@
   <project path="hardware/nxp/nfc" name="platform_hardware_nxp_nfc" remote="pearl" />
   <project path="hardware/ril" name="platform_hardware_ril" remote="pearl" revision="pie" />
   <project path="hardware/ril-caf" name="platform_hardware_ril-caf" remote="pearl" revision="pie" />
+  
+  <!-- Pearl Packages Repos -->
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="pearl" />
   <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" remote="pearl" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="pearl" />
@@ -79,6 +77,15 @@
   <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="pearl" />
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="pearl" />
   <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="pearl" />
+
+  <!-- Pearl Core Repos -->
+  <project path="frameworks/av" name="platform_frameworks_av" remote="pearl" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="pearl" />
+  <project path="frameworks/compile/mclinker" name="platform_frameworks_compile_mclinker" remote="pearl" />
+  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="pearl" />
+  <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" remote="pearl" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="pearl" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="pearl" />
   <project path="prebuilts/build-tools" name="platform_prebuilts_build-tools" remote="lean" clone-depth="1" />
   <project path="prebuilts/clang/host/linux-x86" name="platform_prebuilts_clang_host_linux-x86" remote="pearl" clone-depth="1" />
   <project path="system/bt" name="platform_system_bt" remote="pearl" />
@@ -89,6 +96,8 @@
   <project path="system/vold" name="platform_system_vold" remote="pearl" />
   <project path="system/tools/dtbtool" name="platform_system_tools_dtbtool" remote="pearl" />
   <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="pearl" />
+  
+  <!-- Qcom Vendor Repos -->
   <project path="vendor/pearl" name="platform_vendor_pearl" remote="pearl" />
   <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" remote="pearl" />
   <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" remote="pearl" />
