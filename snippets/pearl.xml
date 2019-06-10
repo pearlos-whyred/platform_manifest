@@ -27,12 +27,12 @@
   <project path="external/ant-wireless/ant_native" name="platform_external_ant-wireless_ant_native" remote="pearl" />
   <project path="external/ant-wireless/ant_service" name="platform_external_ant-wireless_ant_service" remote="pearl" />
   <project path="external/exfat" name="platform_external_exfat" remote="pearl" />
+  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="pearl" />
   <project path="external/ntfs-3g" name="platform_external_ntfs-3g" remote="pearl" />
   <project path="external/libphonenumber" name="platform_external_libphonenumber" remote="pearl" />
   <project path="external/perfetto" name="platform_external_perfetto" remote="pearl" />
   <project path="external/selinux" name="platform_external_selinux" remote="pearl" />
   <project path="external/tinycompress" name="platform_external_tinycompress" remote="pearl" />
-  <project path="external/json-c" name="platform_external_json-c" remote="lean" />
 
   <!-- Pearl Hardware Repos -->
   <project path="hardware/qcom/bootctrl" name="platform_hardware_qcom_bootctrl" remote="pearl" />
@@ -48,6 +48,7 @@
   <project path="hardware/qcom/wlan-caf" name="platform_hardware_qcom_wlan-caf" remote="pearl" revision="pie" />
   <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="pearl" />
   <project path="hardware/pearl/interfaces" name="platform_hardware_pearl_interfaces" groups="pdk" remote="pearl" />
+  <project path="hardware/pearl/telephony" name="platform_hardware_pearl_telephony" groups="pdk" remote="pearl" />
   <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="pearl" />
   <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" remote="pearl" />
   <project path="hardware/nxp/nfc" name="platform_hardware_nxp_nfc" remote="pearl" />
@@ -59,7 +60,7 @@
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="pearl" />
   <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" remote="pearl" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="pearl" />
-  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="lean" />
+  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="pearl" />
   <project path="packages/apps/FMRadio" name="platform_packages_apps_FMRadio" remote="pearl" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="pearl" />
   <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="pearl" />
@@ -84,9 +85,10 @@
   <project path="frameworks/compile/mclinker" name="platform_frameworks_compile_mclinker" remote="pearl" />
   <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" remote="pearl" />
   <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" remote="pearl" />
+  <project path="frameworks/opt/net/voip" name="platform_frameworks_opt_net_voip" remote="pearl" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="pearl" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="pearl" />
-  <project path="prebuilts/build-tools" name="platform_prebuilts_build-tools" remote="lean" clone-depth="1" />
+  <project path="prebuilts/build-tools" name="platform_prebuilts_build-tools" remote="pearl" clone-depth="1" />
   <project path="prebuilts/clang/host/linux-x86" name="platform_prebuilts_clang_host_linux-x86" remote="pearl" clone-depth="1" />
   <project path="system/bt" name="platform_system_bt" remote="pearl" />
   <project path="system/core" name="platform_system_core" remote="pearl" />
@@ -101,10 +103,11 @@
   <project path="vendor/pearl" name="platform_vendor_pearl" remote="pearl" />
   <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" remote="pearl" />
   <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" remote="pearl" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="platform_vendor_qcom_opensource_cryptfs_hw" remote="pearl" />
   <project path="vendor/qcom/opensource/dpm" name="platform_vendor_qcom_opensource_dpm" remote="pearl" />
   <project path="vendor/qcom/opensource/audio" name="platform_vendor_qcom_opensource_audio" remote="pearl" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="pearl" />
-  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="lean" />
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="pearl" />
   <project path="device/qcom/sepolicy-legacy" name="platform_device_qcom_sepolicy-legacy" remote="pearl" />
   <project path="device/pearl/sepolicy" name="platform_device_pearl_sepolicy" remote="pearl" />
  
